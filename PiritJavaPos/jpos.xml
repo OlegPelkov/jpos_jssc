@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE JposEntries PUBLIC "-//JavaPOS//DTD//EN"
+        "jpos/res/jcl.dtd">
+<JposEntries>
+    <!--Saved by JavaPOS jpos.config/loader (JCL) version 2.1.0-RC3 on 10/26/04 8:17 AM-->
+
+    <JposEntry logicalName="PIRIT-2F">
+        <creation factoryClass="ru.crystals.pos.fiscalprinter.jpos.pirit.PiritSvc112Factory" serviceClass="ru.crystals.pos.fiscalprinter.jpos.pirit.PiritSvc112"/>
+        <vendor name="PIRIT" url="http://www.pirit-m.com"/>
+        <jpos category="FiscalPrinter" version="1.9"/>
+        <product description="Fiscal printer service" name="PIRIT-2F" url="http://www.javapos.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <!--Serial port name-->
+        <prop name="port" type="String" value="COM3"/>
+        <prop name="dataBits" type="String" value="8"/>
+        <prop name="stopBits" type="String" value="1"/>
+
+        <!--Baudrate-->
+        <prop name="baudRate" type="String" value="57600"/>
+        <!--Default department-->
+        <prop name="department" type="String" value="1"/>
+        <!-- Tax officer password -->
+        <prop name="taxPassword" type="String" value="PIRI"/>
+        <!-- Operator password -->
+        <prop name="operatorPassword" type="String" value="PIRI"/>
+        <!-- System administrator password -->
+        <prop name="sysAdminPassword" type="String" value="PIRI"/>
+        <!-- Default font number -->
+        <prop name="fontNumber" type="String" value="1"/>
+        <!-- Close receipt text -->
+        <prop name="closeReceiptText" type="String" value=""/>
+        <!-- Subtotal text -->
+        <prop name="subtotalText" type="String" value="SUBTOTAL:"/>
+        <!-- Driver byte receive timeout -->
+        <prop name="byteTimeout" type="String" value="1000"/>
+        <!-- Device byte receive timeout -->
+        <prop name="deviceByteTimeout" type="String" value="1000"/>
+        <!-- Device search enabled for all serial ports -->
+        <prop name="searchByPortEnabled" type="String" value="0"/>
+        <!-- Device search enabled for all baud rates -->
+        <prop name="--=это спам=--" type="String" value="1"/>
+        <!-- Amount coefficient -->
+        <prop name="amountFactor" type="String" value="1"/>
+        <!-- Quantity coefficient -->
+        <prop name="quantityFactor" type="String" value="1"/>
+        <!-- Log4j properties file name -->
+        <prop name="log4jProperties" type="String" value="./log4j.properties"/>
+        <!-- Payment types -->
+        <prop name="payType0" type="String" value="0"/>
+        <prop name="payType1" type="String" value="0"/>
+        <prop name="payType2" type="String" value="0"/>
+        <prop name="payType3" type="String" value="0"/>
+        <prop name="payType4" type="String" value="0"/>
+        <prop name="payType5" type="String" value="0"/>
+        <prop name="payType6" type="String" value="0"/>
+        <prop name="payType7" type="String" value="0"/>
+        <prop name="payType8" type="String" value="0"/>
+        <prop name="payType9" type="String" value="0"/>
+        <prop name="payType10" type="String" value="1"/>
+        <prop name="payType11" type="String" value="1"/>
+        <prop name="payType12" type="String" value="1"/>
+        <prop name="payType13" type="String" value="1"/>
+        <prop name="payType14" type="String" value="1"/>
+        <prop name="payType15" type="String" value="1"/>
+        <prop name="payType16" type="String" value="1"/>
+        <prop name="payType17" type="String" value="1"/>
+        <prop name="payType18" type="String" value="1"/>
+        <prop name="payType19" type="String" value="1"/>
+        <prop name="payType20" type="String" value="2"/>
+        <prop name="payType21" type="String" value="2"/>
+        <prop name="payType22" type="String" value="2"/>
+        <prop name="payType23" type="String" value="2"/>
+        <prop name="payType24" type="String" value="2"/>
+        <prop name="payType25" type="String" value="2"/>
+        <prop name="payType26" type="String" value="2"/>
+        <prop name="payType27" type="String" value="2"/>
+        <prop name="payType28" type="String" value="2"/>
+        <prop name="payType29" type="String" value="2"/>
+        <prop name="payType30" type="String" value="3"/>
+        <prop name="payType31" type="String" value="3"/>
+        <prop name="payType32" type="String" value="3"/>
+        <prop name="payType33" type="String" value="3"/>
+        <prop name="payType34" type="String" value="3"/>
+        <prop name="payType35" type="String" value="3"/>
+        <prop name="payType36" type="String" value="3"/>
+        <prop name="payType37" type="String" value="3"/>
+        <prop name="payType38" type="String" value="3"/>
+        <prop name="payType39" type="String" value="3"/>
+
+        <!-- Payment names -->
+        <prop name="paymentName1" type="String" value="CASH"/>
+        <prop name="paymentName2" type="String" value="CREDIT"/>
+        <prop name="paymentName3" type="String" value="TARE"/>
+        <prop name="paymentName4" type="String" value="CARD"/>
+        <!-- device state polling enabled -->
+        <prop name="pollEnabled" type="String" value="0"/>
+        <!-- device state polling interval in milliseconds -->
+        <prop name="pollInterval" type="String" value="500"/>
+    </JposEntry>
+
+</JposEntries>

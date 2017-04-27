@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="PiritJavaPos">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jssc-2.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jpos-1.12.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/log4j-1.2.17.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

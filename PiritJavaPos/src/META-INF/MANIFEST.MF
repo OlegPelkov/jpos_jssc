@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: ru.crystals.pos.fiscalprinter.jpos.pirit.connector.PiritConnector
+

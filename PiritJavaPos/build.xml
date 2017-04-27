@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<project default="create_plugin" name="Builder for FiscalPrinterPiritPlugin">
+
+    <property name="version" value="1.1.5" />
+    <property name="path" value="C:\Users\o.pelkov\Documents\JSSC_JPOS\PiritJavaPos" />
+    <property name="config" value="fiscalPrinter-pirit-config.xml" />
+
+    <path id="classpath">
+        <fileset dir="${basedir}" includes="jpos-1.12.2.jar" />
+        <fileset dir="${basedir}" includes="log4j-1.2.17.jar" />
+        <fileset dir="${basedir}" includes="jssc-2.8.0.jar" />
+    </path>
+
+    <target name="create_plugin">
+        <mkdir dir="${path}/bin" />
+        <javac srcdir="${path}/src" destdir="${path}/bin">
+            <classpath refid="classpath" />
+        </javac>
+
+        <tstamp>
+            <format property="TODAY_UK"
+                    pattern="d-MMMM-yyyy"
+                    locale="en,UK"/>
+        </tstamp>
+
+        <jar destfile="${path}/libs/PiritJPos.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Built-Version" value="${version}" />
+                <attribute name="Main-Class" value="ru.crystals.pos.fiscalprinter.jpos.pirit.connector.PiritConnector"/>
+                <attribute name="Built-Date" value="${TODAY} ${TSTAMP}"/>
+            </manifest>
+            <fileset dir="bin">
+                <exclude name="**/*.cfg.xml" />
+            </fileset>
+        </jar>
+    </target>
+
+</project>
